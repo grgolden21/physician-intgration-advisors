@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Physician Integration Advisors</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #1a202c; min-height: 100vh; }
+    header { background: #1e3a8a; color: #fff; padding: 2rem 0; }
+    header .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+    header h1 { font-size: 2rem; font-weight: bold; margin: 0; }
+    header p { font-size: 1.125rem; margin-top: 0.5rem; }
+    main { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.5rem; display: flex; flex-direction: column; gap: 4rem; }
+    section h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; }
+    section p, section ul { font-size: 1.125rem; }
+    ul.services-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; list-style: none; padding: 0; max-width: 700px; }
+    ul.services-list li { background: #eff6ff; padding: 1rem; border-radius: 1rem; }
+    form.contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 700px; }
+    .contact-form input, .contact-form textarea { padding: 0.75rem; border: 1px solid #ddd; border-radius: 1rem; font-size: 1rem; font-family: inherit; resize: vertical; }
+    .contact-form textarea { grid-column: 1 / span 2; min-height: 5rem; }
+    .contact-form button { background: #1e3a8a; color: #fff; padding: 0.75rem 1.5rem; border-radius: 1rem; border: none; cursor: pointer; font-weight: 600; margin-top: 0.5rem; grid-column: 1 / span 2; font-size: 1rem; }
+    .contact-form button:hover { background: #274bb0; }
+    footer { background: #f3f4f6; padding: 1.5rem 0; text-align: center; font-size: 0.875rem; color: #6b7280; margin-top: 3rem; }
+    @media (max-width: 700px) { ul.services-list, form.contact-form { grid-template-columns: 1fr; } main { padding: 1.5rem 0.5rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Physician Integration Advisors</h1>
+      <p>Strategic Guidance for Healthcare Growth and Alignment</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Physician Integration Advisors partners with healthcare organizations, private equity groups,
+        and physician practices to deliver strategic business development and alignment solutions.
+        We specialize in growth strategy, clinical integration, and deal execution within hospital-based
+        specialties such as Anesthesia, Emergency Medicine, and Hospitalist services.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li>Fractional Business Development Leadership</li>
+        <li>Physician Alignment Strategy</li>
+        <li>M&amp;A Advisory &amp; Diligence Support</li>
+        <li>Hospital/Practice Integration Planning</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p style="margin-bottom:1rem;max-width:560px;">
+        Whether you're seeking guidance on a strategic initiative or need execution support on a growth
+        opportunity, we’re here to help.
+      </p>
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Physician Integration Advisors. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
